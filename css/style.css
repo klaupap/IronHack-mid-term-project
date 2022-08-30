@@ -1,1 +1,120 @@
-font-family: 'Roboto', sans-serif;
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #514D67;
+    background-color: #E5E5E5;
+  }
+
+  h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    
+  }
+  h2{
+    font-size: 3em;
+    text-align: center;
+    line-height: 4em;
+
+  }
+  h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+
+  .heading{
+     text-align: center;
+     margin-top: 222px;
+  }
+
+  .heading p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+ .hero-image{
+    width: 570px;
+    height: 637px;
+ }
+ .card-image{
+    width: 190px;
+    height: 216px;
+ }
+
+ .card-image-2{
+    width: 190px;
+    height: 193px;
+}
+
+  .container-projects{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    width: 1440px;
+    height: 561px;
+    left: calc(50% - 1440px/2);
+    top: 1298px;
+  }
+
+  .container-projects img{
+    width: 250px;
+    height: 180px;
+}
+
+
+  .form-questions{
+    background-color: #FFC600;
+  }
+
+  /* Inici menú hamburguesa */
+ul{
+    display: none;
+  }
+  
+  input:checked  ~ ul{
+    display:block;
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+  }
+
+  li {
+    display: block;
+    background: lightgrey;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+  }
+
+  /* Fi del menú hamburguesa */
+
