@@ -10,15 +10,17 @@ body {
     background-color: #F2F4FC;
   }
 
+  /* Falta revisar mida de les fonts*/
 a {
+  color:#072AC8;
   text-decoration: none;
 }
 
   h1 {
     color: #292E47;
     font-weight: 700;
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 25px;
+    line-height: 30px;
     
   }
   h2 {
@@ -35,9 +37,10 @@ a {
     line-height: 47px;
   }
 
-  .link-btn {
-  color: #072AC8;
+  p {
+    line-height: 30px;
   }
+
 
   header {
     display:flex;
@@ -46,7 +49,14 @@ a {
     margin: 30px 30px;
   }
 
-    /* Inici menú hamburguesa */
+/* Inici menú hamburguesa */
+
+/* Problema pendent de solucionar: quan es desplega 
+el menú desplegable, baixa el botó de Contact Us.
+
+Voldria que per mobile el Contact Us em sortís a baix
+de tot del menú hamburguesa */
+
 ul {
   display: none;
 }
@@ -66,8 +76,7 @@ label {
   width: 50px;
   height: 50px;
   line-height: 30px;
-  font-weight: bold;
-  text-align: center;
+  text-align: left;
   user-select: none;
 }
 
@@ -78,65 +87,122 @@ label:hover {
 li {
   display: block;
   background: #F2F4FC;
-  margin: 0;
   padding: 10px;
   list-style: none;
-  border-bottom: 1px solid grey;
+  border-bottom: 0.5px solid #FFC600;
 }
 
 .button {
   background-color: #072AC8;
   color: white;
-  padding: 18px 18px;
+  padding: 10px 15px;
   font-size: 0.8em;
+  text-decoration: none;
+  margin-top: 40px;
 
 }
+
 
 /* Fi del menú hamburguesa */
 
+/* HERO SECTION */
 
 #hero-section {
+  margin: 30px 30px;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
+  align-content: center;
 }
 
-  .heading-img {
-    position: relative;
-  }
+.heading-img {
+  position: relative;
+}
 
  .hero-image {
-    width: 570px;
+    width: 300px;
     height: auto;
  }
+
+ /* Crec que això està fatal però de moment funciona */
  .card-image {
+    top: -10px;
+    left: -50px;  
     width: 190px;
     height: auto;
     position: absolute;
  }
 
  .card-image-2 {
+    bottom: -60px;
+    right: -60px;
     width: 190px;
     height: auto;
     position: absolute;
 }
 
-  .container-projects {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: absolute;
-    width: 1440px;
-    height: 561px;
-    left: calc(50% - 1440px/2);
-    top: 1298px;
-  }
-
-  .container-projects img {
-    width: 250px;
-    height: 180px;
+.heading {
+  text-align: center;
 }
 
+.heading a {
+  margin-top: 40px;
+
+}
+
+.link-btn {
+  color: #6B708D;
+  font-size: 0.8em;
+}
+
+/* LOGO SECTION 
+A LA VERSIÓ MOBILE NO VAN */
+
+#client-logos {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+align-content: center;
+margin-top: 70px;
+}
+
+.logo-client {
+margin: 10px 5px;
+filter: grayscale(100%);
+}
+
+/* PROJECTS SECTION
+
+Aquí em passa que la tercera imatge no sé com reduïr-la de width*/
+
+#projects-section {
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+
+}
+
+.projects-items {
+justify-content: center;
+align-items: center;
+align-content: center;
+text-align: center;
+margin: 30px 30px;
+}
+
+.recent-projects {
+  text-align: center;
+}
+
+
+.projects-img {
+height: 200px;
+width: auto;
+align-items: center;
+margin-top: 30px;
+}
 
   .form-questions {
     background-color: #FFC600;
