@@ -6,61 +6,122 @@ body {
     font-family: "Roboto", sans-serif;
     padding: 0;
     margin: 0;
-    color: #514D67;
-    background-color: #E5E5E5;
+    color: #6B708D;
+    background-color: #F2F4FC;
   }
 
-  h1{
-    font-family: 'Roboto';
-    font-style: normal;
+a {
+  text-decoration: none;
+}
+
+  h1 {
+    color: #292E47;
     font-weight: 700;
     font-size: 60px;
     line-height: 70px;
     
   }
-  h2{
+  h2 {
+    color: #292E47;
     font-size: 3em;
     text-align: center;
     line-height: 4em;
 
   }
-  h3{
-    font-family: 'Roboto';
-    font-style: normal;
+  h3 {
+    color: #292E47;
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
   }
 
-
-  .heading{
-     text-align: center;
-     margin-top: 222px;
+  .link-btn {
+  color: #072AC8;
   }
 
-  .heading p{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
+  header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 30px;
   }
 
- .hero-image{
-    width: 570px;
-    height: 637px;
- }
- .card-image{
-    width: 190px;
-    height: 216px;
- }
-
- .card-image-2{
-    width: 190px;
-    height: 193px;
+    /* Inici menú hamburguesa */
+ul {
+  display: none;
 }
 
-  .container-projects{
+input:checked  ~ ul {
+  display:block;
+}
+
+input {
+  display: none;
+}
+
+label {
+  box-sizing: border-box;
+  display: inline-block;
+  border: none;
+  width: 50px;
+  height: 50px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+
+label:hover {
+  color: #FFC600;
+}
+
+li {
+  display: block;
+  background: #F2F4FC;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+}
+
+.button {
+  background-color: #072AC8;
+  color: white;
+  padding: 18px 18px;
+  font-size: 0.8em;
+
+}
+
+/* Fi del menú hamburguesa */
+
+
+#hero-section {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+  .heading-img {
+    position: relative;
+  }
+
+ .hero-image {
+    width: 570px;
+    height: auto;
+ }
+ .card-image {
+    width: 190px;
+    height: auto;
+    position: absolute;
+ }
+
+ .card-image-2 {
+    width: 190px;
+    height: auto;
+    position: absolute;
+}
+
+  .container-projects {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -71,50 +132,15 @@ body {
     top: 1298px;
   }
 
-  .container-projects img{
+  .container-projects img {
     width: 250px;
     height: 180px;
 }
 
 
-  .form-questions{
+  .form-questions {
     background-color: #FFC600;
   }
 
-  /* Inici menú hamburguesa */
-ul{
-    display: none;
-  }
-  
-  input:checked  ~ ul{
-    display:block;
-  }
 
-  input {
-    display: none;
-  }
-
-  label {
-    box-sizing: border-box;
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-weight: bold;
-    text-align: center;
-    user-select: none;
-  }
-
-  li {
-    display: block;
-    background: lightgrey;
-    margin: 0;
-    padding: 10px;
-    list-style: none;
-    border-bottom: 1px solid grey;
-  }
-
-  /* Fi del menú hamburguesa */
 

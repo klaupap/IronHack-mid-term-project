@@ -13,110 +13,123 @@
 
   <body>
     <header>
-        <div>
-          <img src="project-assets/logos/circle.svg" alt="Logo Circle">
+          <a href="index1.html"><img src="project-assets/logos/circle.svg" alt="Logo Circle"></a>
           <nav id="nav-bar">
             <input type="checkbox" id="menu">
             <label for="menu"> ☰ </label>
             <ul>
-              <li>Home</li>
-              <li>Projects</li>
-              <li>Services</li>
-              <li>Contact Us</li>
+              <li><a href="index1.html">Home</a></li>
+              <li><a href="index2.html">Projects</a></li>
+              <li><a href="#">Services</a></li>
             </ul>
+            <a href="index3.html" class="button">Contact Us</a>
           </nav>
+         
     </header>
-    <heading>
+    <heading id="hero-section">
         <div class="heading-img">
           <img class="card-image" src="project-assets/hero-section/card-1.png">
           <img class="hero-image" src="project-assets/hero-section/hero-image.png">
           <img class="card-image-2" src="project-assets/hero-section/card-2.png">
         </div>
         <div class="heading">
-            <h1>
-                Empower Your Business With Stunning Design!
-            </h1>
+            <h1>Empower Your Business With Stunning Design!</h1>
             <p>
                 Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.
             </p>
-            <a href="#" class="link-btn">Get in touch</a>
-            <a href="#" class="link-btn">See our work</a>
+            <a href="index3.html" class="button">Get in touch</a>
+            <a href="index2.html" class="link-btn">See our work</a>
 
         </div>
     </heading>
-        <section>
-          
+        <section id="client-logos">
+          <a href="https://www.airbnb.es/" target="_blank"><img src="project-assets/logos/airbnb-logo.svg"></a>
+          <a href="https://www.google.es/" target="_blank"><img src="project-assets/logos/google-logo.svg"></a>
+          <a href="https://www.microsoft.com/" target="_blank"><img src="project-assets/logos/microsoft-logo.svg"></a>
+          <a href="https://www.fedex.com/" target="_blank"><img src="project-assets/logos/fedex-logo.svg"></a>
+          <a href="https://www.amazon.es/" target="_blank"><img src="project-assets/logos/amazon-logo.svg"></a>
         </section>
-       <section class="container-projects">
+       <section id="projects-section">
             <h3>Recent Projects</h3>
             <div>
-              <img src="project-assets/projects-section/1.jpg">
-              <h4>Simplify</h4>
-              <p>UI Design & App Development</p>
-              <a href="#">Learn more</a>
-              
-            </div>
-            <div>
-              <img src="project-assets/projects-section/2.jpg">
-              <h4>Dashcoin</h4>
-              <p>Web Development</p>
-              <a href="#">Learn more</a>
-            </div>
-            <div>
-              <img src="project-assets/projects-section/3.jpg">
-              <h4>Vectorify</h4>
-              <p>User Experience Design</p>
-              <a href="#">Learn more</a>
-            </div>
+              <article>
+                <img src="project-assets/projects-section/1.jpg">
+                <h4>Simplify</h4>
+                <p>UI Design & App Development</p>
+                <a href="#" class="learn-more">Learn more</a>
+              </article>
+              <article>
+                <img src="project-assets/projects-section/2.jpg">
+                <h4>Dashcoin</h4>
+                <p>Web Development</p>
+                <a href="#" class="learn-more">Learn more</a>
+            </article>
+            <article>
+                <img src="project-assets/projects-section/3.jpg">
+                <h4>Vectorify</h4>
+                <p>User Experience Design</p>
+                <a href="#" class="learn-more">Learn more</a>
+            </article>
+           </div>
        </section>
-       <section>
+       <section id="clients-section">
+            <img src="project-assets/testimonial-section/memoji-1.png">
+            <img src="project-assets/testimonial-section/memoji-2.png">
             <h3>Hear What Our Clients Have to Say</h3>
-            <p>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</p>
-            <div>
-              <img src="project-assets/testimonial-section/profile.png">
-              <p>Kristin Watson</p>
-              <p>Booking.com</p>
-            </div>
-
+            <h4>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</h4>
+            <img src="project-assets/testimonial-section/profile.png">
+            <p>Kristin Watson</p>
+            <p>Booking.com</p>
+            <img src="project-assets/testimonial-section/memoji-3.png">
+            <img src="project-assets/testimonial-section/memoji-4.png">
        </section>
-       <section>
+       <section id="services-section">
             <h3>Our Services</h3>
-            <div>
+            <article>
               <img src="project-assets/services-section/icons/1.svg">
               <h4>User Interface Design</h4>
               <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
               <a href="#">Learn more</a>
-            </div>
-            <div>
+            </article>
+            <article>
               <img src="project-assets/services-section/icons/2.svg">
               <h4>User Experience Design</h4>
               <p>Circle always focuses on delivering the best user experience to your customers.</p>
-              <a href="#">Learn more</a>
-            </div>
-            <div>
+              <a href="#" class="learn-more">Learn more</a>
+            </article>
+            <article>
               <img src="project-assets/services-section/icons/3.svg">
               <h4>Application Development</h4>
               <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
-              <a href="#">Learn more</a>
-            </div>
+              <a href="#" class="learn-more">Learn more</a>
+            </article>
        </section>
-       <section class="form-questions">
-        <h3>Do you have any questions?</h3>
-        <p>Let us help you!</p>
+       <section id="questions-section">
         <div>
-          <input type="email" placeholder="Enter your email"/>
-          <button>Subscribe</button>
+          <h3>Do you have any questions?</h3>
+          <p>Let us help you!</p>
+          <form>
+            <img src="project-assets/newsletter/icon/mail.svg">
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder= "Enter your email">
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
     </section>
        <footer>
-        <img src="project-assets/logos/circle.svg" alt="Logo Circle">
-        <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-        <a href="">Team</a>
-        <a href="">About Us</a>
-        <a href="">Press</a>
-        <a href="">Privacy Policy</a>
-        <a href="">Services</a>
-        <a href="">Projects</a>
+        <div>
+          <a href="index.html"><img src="project-assets/logos/circle.svg" alt="Logo Circle"></a> 
+          <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+        </div>
+        <div>
+          <a href="#">Team</a>
+          <a href="#">About Us</a>
+          <a href="#">Press</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+        </div>
        </footer>
 
-  </body> 
+    </body>
+  </html> 
