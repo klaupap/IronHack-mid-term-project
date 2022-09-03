@@ -12,55 +12,57 @@
   </head>
   <body>
     <header>
-        <div>
-          <img src="project-assets/logos/circle.svg" alt="Logo Circle">
-        </div>
-        <div>
-          <nav>
-            <input type="checkbox" id="menu">
-            <label for="menu"> ☰ </label>
-            <ul>
-              <li>Home</li>
-              <li>Projects</li>
-              <li>Services</li>
-              <li>Contact Us</li>
-            </ul>
-          </nav>
-        </div>
-    </header>
-    <section>
-      <h1>Contact Us</h1>
-      <form>
-        <div>
-          <label> Full name * </label>
-           <input placeholder="Enter your full name" required>
-         </div>
-         <div>
-          <label> Email </label>
-           <input type="email" placeholder="Enter your email address" required>
-         </div>
-         <div>
-          <label> Phone </label>
-           <input type="tel" placeholder="Enter your phone number" required>
-         </div>
-         <div>
-          <label> Message </label>
-           <textarea placeholder="Write your message here ...." maxlength="50" required></textarea>
-         </div>
-        <div>
-          <button type="submit"> Submit </button>
-        </div>
-      </form>
-    </section>
-    <footer>
-      <img src="project-assets/logos/circle.svg" alt="Logo Circle">
-      <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-      <a href="">Team</a>
-      <a href="">About Us</a>
-      <a href="">Press</a>
-      <a href="">Privacy Policy</a>
-      <a href="">Services</a>
-      <a href="">Projects</a>
-     </footer>
+      <a href="index1.html"><img src="project-assets/logos/circle.svg" alt="Logo Circle"></a>
+      <nav id="nav-bar">
+        <input type="checkbox" id="menu">
+        <label for="menu"> ☰ </label>
+        <ul>
+          <li><a href="index1.html" class="item-menu">Home</a></li>
+          <li><a href="index2.html" class="item-menu">Projects</a></li>
+          <li><a href="#" class="item-menu">Services</a></li>
+        </ul>
+        <a href="index3.html" class="button">Contact Us</a>
+      </nav>
+</header>
+
+<section>
+  <h1>Contact Us</h1>
+  <form>
+    <div>
+      <label> Full name * </label>
+       <input placeholder="Enter your full name" required>
+     </div>
+     <div>
+      <label> Email </label>
+       <input type="email" placeholder="Enter your email address" required>
+     </div>
+     <div>
+      <label> Phone </label>
+       <input type="tel" placeholder="Enter your phone number" pattern="(\+)[0-9]{11}" title="El teléfono tiene que empezar por +XX" required>
+     </div>
+     <div>
+      <label> Message </label>
+       <textarea placeholder="Write your message here ...." maxlength="50" required></textarea>
+     </div>
+    <div>
+      <button type="submit"> Submit </button>
+    </div>
+  </form>
+</section>
+
+<footer>
+  <div>
+    <a href="index.html"><img src="project-assets/logos/circle.svg" alt="Logo Circle"></a> 
+    <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+  </div>
+  <div>
+    <a href="#">Team</a>
+    <a href="#">About Us</a>
+    <a href="#">Press</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Services</a>
+    <a href="#">Projects</a>
+  </div>
+ </footer>
   
   </body> 

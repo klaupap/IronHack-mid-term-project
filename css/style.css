@@ -16,81 +16,68 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
   h1 {
     color: #292E47;
     font-weight: 700;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 60px;
+    line-height: 60px;
     
   }
   h2 {
     color: #292E47;
-    font-size: 3em;
+    font-size: 50px;
     text-align: center;
     line-height: 4em;
 
   }
   h3 {
-    color: #292E47;
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
+    color:#292E47;
+  }
+
+  h4 {
+    font-size: 24px;
+    font-weight: 500;
   }
 
   p {
     line-height: 30px;
   }
 
+  .body-regular {
+    font-size: 20px;
+    font-weight: 400;
+  }
 
   header {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 30px 30px;
+    margin: 30px 40px;
   }
 
-/* Inici menú hamburguesa */
 
-/* Problema pendent de solucionar: quan es desplega 
-el menú desplegable, baixa el botó de Contact Us.
+  header a {
+    font-size: 17px;
+    font-weight: 500;
+    color: #6B708D;
+  }
 
-Voldria que per mobile el Contact Us em sortís a baix
-de tot del menú hamburguesa */
+  header ul li {
+margin: 0px 12px;
+  }
 
-ul {
-  display: none;
-}
+  .item-menu:hover {
+    color: #FFC600;
+      }
 
-input:checked  ~ ul {
-  display:block;
-}
 
-input {
-  display: none;
-}
-
-label {
-  box-sizing: border-box;
-  display: inline-block;
-  border: none;
-  width: 50px;
-  height: 50px;
-  line-height: 30px;
-  text-align: left;
-  user-select: none;
-}
-
-label:hover {
-  color: #FFC600;
-}
-
-li {
-  display: block;
-  background: #F2F4FC;
-  padding: 10px;
-  list-style: none;
-  border-bottom: 0.5px solid #FFC600;
-}
 
 .button {
   background-color: #072AC8;
@@ -103,7 +90,42 @@ li {
 }
 
 
-/* Fi del menú hamburguesa */
+#nav-bar ul {
+  list-style-type: none;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+
+
+.button-nav-bar {
+  background-color: #072AC8;
+  color: white;
+  padding: 10px 15px;
+  font-size: 0.8em;
+  text-decoration: none;
+  margin-top: 40px;
+
+}
+
+@media (max-width: 768px) {
+  .button-nav-bar {
+    display:none;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .emoji {
+    display: none;
+    width: 100px;
+    height: 100px;
+  }
+  }
 
 /* HERO SECTION */
 
@@ -115,6 +137,15 @@ li {
   align-content: center;
 }
 
+@media (min-width: 768px) {
+  #hero-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+
 .heading-img {
   position: relative;
 }
@@ -124,7 +155,6 @@ li {
     height: auto;
  }
 
- /* Crec que això està fatal però de moment funciona */
  .card-image {
     top: -10px;
     left: -50px;  
@@ -143,20 +173,32 @@ li {
 
 .heading {
   text-align: center;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    text-align: left;
+    margin: 50px;
+  }
 }
 
 .heading a {
   margin-top: 40px;
+}
 
+.heading p{
+  padding-bottom: 20px;
 }
 
 .link-btn {
   color: #6B708D;
   font-size: 0.8em;
+  margin-left: 30px;
 }
 
-/* LOGO SECTION 
-A LA VERSIÓ MOBILE NO VAN */
+
+/* LOGO SECTION */
 
 #client-logos {
 display: flex;
@@ -167,6 +209,12 @@ align-content: center;
 margin-top: 70px;
 }
 
+@media (max-width: 768px) {
+  #client-logos {
+    display: none;
+  }
+  }
+
 .logo-client {
 margin: 10px 5px;
 filter: grayscale(100%);
@@ -174,39 +222,255 @@ filter: grayscale(100%);
 
 /* PROJECTS SECTION
 
-Aquí em passa que la tercera imatge no sé com reduïr-la de width*/
-
-#projects-section {
-display: flex;
-flex-direction: column;
-justify-content: center;
+Aquí em passa que el bloc blanc m'ocupa tots els 3 blocs. També el learn more
+vull que quedi més avall i el titol i text més junts*/
 
 
+
+/*@media (min-width: 768px) {
+  #projects-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}*/
+
+#projects-section h3 {
+  text-align: left;
+  margin-left: 60px;
 }
 
 .projects-items {
+display:flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 align-content: center;
-text-align: center;
-margin: 30px 30px;
+text-align: left;
+padding: 2rem 3rem;
 }
 
-.recent-projects {
-  text-align: center;
-}
+@media (min-width: 768px) {
+  .projects-items {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 2rem 3rem;
 
+
+  }
+}
 
 .projects-img {
-height: 200px;
-width: auto;
-align-items: center;
-margin-top: 30px;
+height: auto;
+max-width: 100%;
+
 }
 
-  .form-questions {
+.projects-article {
+background-color: white;
+text-align: left;
+box-shadow: 2px 49px 79px 0px rgba(41,46,71,0.20);
+margin: 30px;
+
+}
+
+
+#projects-section div{
+  padding: 30px;
+
+}
+
+.projects-article h4{ 
+  padding-top: 1.1rem;
+  color: #292E47;
+
+}
+
+.projects-article a{ 
+  padding-top: 4rem;
+
+}
+
+
+/* CLIENTS SECTION */
+
+/*Pendent fer el flex i ajustar les imatges*/
+
+
+#clients-section {
+background-image: url(/project-assets/testimonial-section/orbit.png);
+background-position: cover;
+background-color: #292E47;
+text-align: center;
+padding: 35px;
+}
+
+#clients-section h4 {
+  color:#FFC600;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#clients-section h3 {
+  color: white;
+}
+
+#clients-section p {
+  color: #A2D6F9;
+  -webkit-text-stroke: 0.5px black;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#clients-section a {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* Primer ajustar la imatge perquè sigui quadrada 
+per després poder fer el marc rodó*/
+
+.client-img  {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.client-img  img {
+  width: auto;
+  height: 100%;
+  margin-left: -10px;
+}
+
+.emoji {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+.emoji {
+  display: none;
+  width: 100px;
+  height: 100px;
+}
+}
+
+
+
+/*SERVICES SECTION*/
+
+/* Pendent acabar d'ajustar les imatges*/
+
+#services-section h4 {
+  color: #292E47;
+  
+
+}
+
+#services-section p {
+  color: #6B708D;
+  font-size: 20px;
+  font-weight: 400;
+
+}
+
+#services-section a {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#services-section{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#services-section article {
+  max-width: 80vw;
+  margin: auto;
+  background-color: white;
+  margin-bottom: 3rem;
+  padding: 1rem 1.2rem;
+  box-shadow: 2px 49px 79px 0px rgba(41,46,71,0.20);
+
+
+}
+
+#services-section img {
+  width: 30px;
+  height: 30px;
+  padding: 5%;
+  background-color: #ECF7FF;
+/*posar el border radius i color a un div*/
+}
+
+
+/* QUESTIONS SECTION */
+
+/* Falta arreglar el form, no sé per què no se'm mostra */
+
+
+#questions-section {
     background-color: #FFC600;
+    text-align: center;
   }
 
+  #questions-section h3 {
+   color: #292E47;
+  }
 
+  #questions-section p {
+    color: #292E47;
+    font-weight: 400;
+    font-size: 20px;
+   }
+
+.subscribe-btn {
+  background-color: #072AC8;
+  color: white;
+  padding: 10px 15px;
+  font-size: 0.8em;
+  text-decoration: none;
+  margin-top: 40px;
+  border: none;
+}
+
+/* FOOTER SECTION */
+
+
+
+
+
+/* INDEX 2.HTML - PROJECTS*/
+
+/* HEADING SECTION */
+
+
+/* Aquí em falta canviar el color de la data */
+
+.date {
+  font-size:20px;
+  font-weight: 400px;
+}
+
+.heading2-img {
+  width: 300px;
+  height: 300px;
+
+}
+
+#heading-2 div {
+  padding: 30px;
+  align-items: center;
+
+}
+
+
+/* INDEX 3.HTML - CONTACT US*/
 

@@ -15,29 +15,29 @@
     <header>
           <a href="index1.html"><img src="project-assets/logos/circle.svg" alt="Logo Circle"></a>
           <nav id="nav-bar">
-            <input type="checkbox" id="menu">
-            <label for="menu"> ☰ </label>
             <ul>
               <li><a href="index1.html" class="item-menu">Home</a></li>
               <li><a href="index2.html" class="item-menu">Projects</a></li>
-              <li><a href="#" class="item-menu">Services</a></li>
+              <li><a href="#" class="item-menu">Services</a>
+              <li><a href="index3.html" class="button-nav-bar">Contact Us</a></li>
             </ul>
-            <a href="index3.html" class="button">Contact Us</a>
           </nav>
     </header>
     <heading id="hero-section">
+        <div class="heading">
+            <h1>Empower Your Business With Stunning Design!</h1>
+            <p>
+                Circle is a digital design and development studio.<br> 
+                We design and develop astonishing websites<br>
+                and mobile apps.
+            </p>
+            <a href="index3.html" class="button">Get in touch</a>
+            <a href="index2.html" class="link-btn">See our work</a>
+        </div>
         <div class="heading-img">
           <img class="card-image" src="project-assets/hero-section/card-1.png">
           <img class="hero-image" src="project-assets/hero-section/hero-image.png">
           <img class="card-image-2" src="project-assets/hero-section/card-2.png">
-        </div>
-        <div class="heading">
-            <h1>Empower Your Business With Stunning Design!</h1>
-            <p>
-                Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.
-            </p>
-            <a href="index3.html" class="button">Get in touch</a>
-            <a href="index2.html" class="link-btn">See our work</a>
         </div>
     </heading>
         <section id="client-logos">
@@ -47,39 +47,49 @@
           <a href="https://www.fedex.com/" target="_blank" class="logo-client"><img src="project-assets/logos/fedex-logo.svg"></a>
           <a href="https://www.amazon.es/" target="_blank" class="logo-client"><img src="project-assets/logos/amazon-logo.svg"></a>
         </section>
+
        <section id="projects-section">
             <h3  class="recent-projects">Recent Projects</h3>
             <div class="projects-items">
-              <article>
+              <article class="projects-article">
                 <img src="project-assets/projects-section/1.jpg" class="projects-img">
-                <h4>Simplify</h4>
-                <p>UI Design & App Development</p>
-                <a href="#" class="learn-more">Learn more</a>
+                <div>
+                  <h4>Simplify</h4>
+                  <p>UI Design & App Development</p>
+                  <a href="#" class="learn-more">Learn more</a>
+                </div>
               </article>
-              <article>
+              <article class="projects-article">
                 <img src="project-assets/projects-section/2.jpg" class="projects-img">
-                <h4>Dashcoin</h4>
-                <p>Web Development</p>
-                <a href="#" class="learn-more">Learn more</a>
+                <div>
+                  <h4>Dashcoin</h4>
+                  <p>Web Development</p>
+                  <a href="#" class="learn-more">Learn more</a>
+                </div>
             </article>
-            <article>
+            <article class="projects-article">
                 <img src="project-assets/projects-section/3.jpg" class="projects-img">
-                <h4>Vectorify</h4>
-                <p>User Experience Design</p>
-                <a href="#" class="learn-more">Learn more</a>
+                <div>
+                  <h4>Vectorify</h4>
+                  <p>User Experience Design</p>
+                  <a href="#" class="learn-more">Learn more</a>
+                </div>  
             </article>
            </div>
        </section>
+
        <section id="clients-section">
-            <img src="project-assets/testimonial-section/memoji-1.png">
-            <img src="project-assets/testimonial-section/memoji-2.png">
+            <img src="project-assets/testimonial-section/memoji-1.png" class="emoji">
+            <img src="project-assets/testimonial-section/memoji-2.png" class="emoji">
             <h3>Hear What Our Clients Have to Say</h3>
             <h4>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</h4>
-            <img src="project-assets/testimonial-section/profile.png">
+            <div class="client-img">
+              <img src="project-assets/testimonial-section/profile.png">
+            </div>
             <p>Kristin Watson</p>
-            <p>Booking.com</p>
-            <img src="project-assets/testimonial-section/memoji-3.png">
-            <img src="project-assets/testimonial-section/memoji-4.png">
+            <a href="www.booking.com">Booking.com</a>
+            <img src="project-assets/testimonial-section/memoji-3.png" class="emoji">
+            <img src="project-assets/testimonial-section/memoji-4.png" class="emoji">
        </section>
        <section id="services-section">
             <h3>Our Services</h3>
@@ -106,12 +116,14 @@
         <div>
           <h3>Do you have any questions?</h3>
           <p>Let us help you!</p>
-          <form>
-            <img src="project-assets/newsletter/icon/mail.svg">
-            <label for="email"></label>
-            <input type="email" id="email" name="email" placeholder= "Enter your email">
-            <button type="submit">Subscribe</button>
-          </form>
+        </div>
+        <form action="">
+          <img src="project-assets/newsletter/icon/mail.svg">
+          <label for="email"></label>
+          <input type="email" id="email" name="email" placeholder= "Enter your email" required>
+          <button type="submit">Subscribe</button>
+      </form>
+        </div>
         </div>
     </section>
        <footer>
