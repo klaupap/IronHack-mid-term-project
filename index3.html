@@ -14,38 +14,36 @@
     <header>
       <a href="index1.html"><img src="project-assets/logos/circle.svg" alt="Logo Circle"></a>
       <nav id="nav-bar">
-        <input type="checkbox" id="menu">
-        <label for="menu"> ☰ </label>
         <ul>
           <li><a href="index1.html" class="item-menu">Home</a></li>
           <li><a href="index2.html" class="item-menu">Projects</a></li>
-          <li><a href="#" class="item-menu">Services</a></li>
+          <li><a href="#" class="item-menu">Services</a>
+          <li><a href="index3.html" class="button-nav-bar">Contact Us</a></li>
         </ul>
-        <a href="index3.html" class="button">Contact Us</a>
       </nav>
 </header>
 
-<section>
+<section id="contact-us-section">
   <h1>Contact Us</h1>
   <form>
     <div>
-      <label> Full name * </label>
-       <input placeholder="Enter your full name" required>
+      <label> Full Name * </label>
+       <input id="name-form" placeholder="Enter your full name" required>
      </div>
      <div>
       <label> Email </label>
-       <input type="email" placeholder="Enter your email address" required>
+       <input type="email" id="email-form" placeholder="Enter your email address" required>
      </div>
      <div>
       <label> Phone </label>
-       <input type="tel" placeholder="Enter your phone number" pattern="(\+)[0-9]{11}" title="El teléfono tiene que empezar por +XX" required>
+       <input type="tel" id="phone-form" placeholder="Enter your phone number" pattern="(\+)[0-9]{11}" title="El teléfono tiene que empezar por +XX" required>
      </div>
      <div>
       <label> Message </label>
-       <textarea placeholder="Write your message here ...." maxlength="50" required></textarea>
+       <textarea id="message-form" placeholder="Write your message here ...." maxlength="50" required></textarea>
      </div>
     <div>
-      <button type="submit"> Submit </button>
+      <button type="submit" class="submit-btn"> Submit </button>
     </div>
   </form>
 </section>
@@ -53,16 +51,17 @@
 <footer>
   <div>
     <a href="index.html"><img src="project-assets/logos/circle.svg" alt="Logo Circle"></a> 
-    <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+    <p>2972 Westheimer Rd. Santa Ana,<br>
+      Illinois 85486</p>
   </div>
-  <div>
+  <div class="footer-links">
     <a href="#">Team</a>
+    <a href="#">Services</a>
     <a href="#">About Us</a>
     <a href="#">Press</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Services</a>
     <a href="#">Projects</a>
+    <a href="#">Privacy Policy</a>
   </div>
- </footer>
+</footer>
   
   </body> 

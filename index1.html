@@ -68,7 +68,7 @@
                 </div>
             </article>
             <article class="projects-article">
-                <img src="project-assets/projects-section/3.jpg" class="projects-img">
+                <img src="project-assets/projects-section/3.jpg" class="projects-img" class="projects-img-3">
                 <div>
                   <h4>Vectorify</h4>
                   <p>User Experience Design</p>
@@ -82,7 +82,8 @@
             <img src="project-assets/testimonial-section/memoji-1.png" class="emoji">
             <img src="project-assets/testimonial-section/memoji-2.png" class="emoji">
             <h3>Hear What Our Clients Have to Say</h3>
-            <h4>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</h4>
+            <h4>“Circle helped us through every stage of our startup.<br>
+               We really enjoyed working with you.”</h4>
             <div class="client-img">
               <img src="project-assets/testimonial-section/profile.png">
             </div>
@@ -91,26 +92,36 @@
             <img src="project-assets/testimonial-section/memoji-3.png" class="emoji">
             <img src="project-assets/testimonial-section/memoji-4.png" class="emoji">
        </section>
+
        <section id="services-section">
+          
             <h3>Our Services</h3>
-            <article>
-              <img src="project-assets/services-section/icons/1.svg">
-              <h4>User Interface Design</h4>
-              <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
-              <a href="#">Learn more</a>
-            </article>
-            <article>
-              <img src="project-assets/services-section/icons/2.svg">
-              <h4>User Experience Design</h4>
-              <p>Circle always focuses on delivering the best user experience to your customers.</p>
-              <a href="#" class="learn-more">Learn more</a>
-            </article>
-            <article>
-              <img src="project-assets/services-section/icons/3.svg">
-              <h4>Application Development</h4>
-              <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
-              <a href="#" class="learn-more">Learn more</a>
-            </article>
+            <div class="services-items">
+              <div>
+                <article>
+                  <img src="project-assets/services-section/icons/1.svg">
+                  <h4>User Interface Design</h4>
+                  <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                  <a href="#">Learn more</a>
+                </article>
+              </div>
+              <div>
+                <article>
+                  <img src="project-assets/services-section/icons/2.svg">
+                  <h4>User Experience Design</h4>
+                  <p>Circle always focuses on delivering the best user experience to your customers.</p>
+                  <a href="#" class="learn-more">Learn more</a>
+                </article>
+              </div>
+              <div>
+                <article>
+                  <img src="project-assets/services-section/icons/3.svg">
+                  <h4>Application Development</h4>
+                  <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
+                  <a href="#" class="learn-more">Learn more</a>
+                </article>
+              </div>
+          </div>
        </section>
        <section id="questions-section">
         <div>
@@ -118,27 +129,28 @@
           <p>Let us help you!</p>
         </div>
         <form action="">
-          <img src="project-assets/newsletter/icon/mail.svg">
           <label for="email"></label>
           <input type="email" id="email" name="email" placeholder= "Enter your email" required>
-          <button type="submit">Subscribe</button>
+          <button type="submit" class="subscribe-btn">Subscribe</button>
       </form>
         </div>
         </div>
     </section>
+
        <footer>
-        <div>
-          <a href="index.html"><img src="project-assets/logos/circle.svg" alt="Logo Circle"></a> 
-          <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-        </div>
-        <div>
-          <a href="#">Team</a>
-          <a href="#">About Us</a>
-          <a href="#">Press</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Services</a>
-          <a href="#">Projects</a>
-        </div>
+          <div>
+            <a href="index.html"><img src="project-assets/logos/circle.svg" alt="Logo Circle"></a> 
+            <p>2972 Westheimer Rd. Santa Ana,<br>
+              Illinois 85486</p>
+          </div>
+          <div class="footer-links">
+            <a href="#">Team</a>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Press</a>
+            <a href="#">Projects</a>
+            <a href="#">Privacy Policy</a>
+          </div>
        </footer>
 
     </body>
