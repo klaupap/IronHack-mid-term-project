@@ -25,22 +25,24 @@
 
 <section id="contact-us-section">
   <h1>Contact Us</h1>
-  <form>
+  <form id="container-form">
     <div>
       <label> Full Name * </label>
-       <input id="name-form" placeholder="Enter your full name" required>
+       <input class="input" id="name-form" placeholder="Enter your full name" required>
      </div>
-     <div>
-      <label> Email </label>
-       <input type="email" id="email-form" placeholder="Enter your email address" required>
-     </div>
-     <div>
-      <label> Phone </label>
-       <input type="tel" id="phone-form" placeholder="Enter your phone number" pattern="(\+)[0-9]{11}" title="El teléfono tiene que empezar por +XX" required>
-     </div>
+     <div id="input-half">
+      <div>
+        <label> Email </label>
+        <input class="input" type="email" id="email-form" placeholder="Enter your email address" required>
+      </div>
+      <div>
+        <label> Phone </label>
+        <input class="input" type="tel" id="phone-form" placeholder="Enter your phone number" pattern="(\+)[0-9]{11}" title="El teléfono tiene que empezar por +XX" required>
+      </div>
+    </div>
      <div>
       <label> Message </label>
-       <textarea id="message-form" placeholder="Write your message here ...." maxlength="50" required></textarea>
+       <textarea class="input" id="message-form" placeholder="Write your message here..." maxlength="50" required></textarea>
      </div>
     <div>
       <button type="submit" class="submit-btn"> Submit </button>
@@ -55,12 +57,16 @@
       Illinois 85486</p>
   </div>
   <div class="footer-links">
-    <a href="#">Team</a>
-    <a href="#">Services</a>
-    <a href="#">About Us</a>
-    <a href="#">Press</a>
-    <a href="#">Projects</a>
-    <a href="#">Privacy Policy</a>
+    <div class="links-1">
+      <a href="#">Team</a>
+      <a href="#">Services</a>
+      <a href="#">About Us</a>
+  
+    <div class="links-2">
+      <a href="#">Press</a>
+      <a href="#">Projects</a>
+      <a href="#">Privacy Policy</a>
+    </div>
   </div>
 </footer>
   
