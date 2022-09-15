@@ -363,7 +363,10 @@ align-content: center;
   margin-left: 30px;
   margin-top: 50px;
   margin-bottom: 120px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
   }
 }
 
@@ -416,6 +419,8 @@ per després poder fer el marc rodó*/
   height: 50px;
   overflow: hidden;
   border-radius: 50%;
+  margin-left: 35px;
+  margin-bottom: -15px;
 }
 
 
@@ -426,6 +431,8 @@ per després poder fer el marc rodó*/
   height: 50px;
   overflow: hidden;
   border-radius: 50%;
+  margin-left: -5px;
+  margin-bottom: -35px;
 
 }
 }
@@ -506,12 +513,14 @@ per després poder fer el marc rodó*/
   margin-top: 30px;
   margin-left: 30px;
   text-align: left;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
   padding: 20px;
   box-shadow: 2px 49px 79px 0px rgba(41,46,71,0.20);
   height: 300px;
   width: 300px;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 
@@ -737,7 +746,7 @@ heading h4 {
 
 .heading2-img {
   width: 100%;
-  height: auto;
+  height: 300px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 }
