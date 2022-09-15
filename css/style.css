@@ -145,6 +145,7 @@ margin: 0px 12px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 80px 10px;
   }
 }
 
@@ -153,25 +154,59 @@ margin: 0px 12px;
   position: relative;
 }
 
+@media (min-width: 768px) {
+  .heading-img {
+    position: relative;
+    margin-left: 170px;
+  }
+}
+
  .hero-image {
     width: 300px;
     height: auto;
  }
 
+ @media (min-width: 768px) {
+  .hero-image {
+    width: 400px;
+    height: auto;
+ }
+}
+
  .card-image {
-    top: -10px;
-    left: -50px;  
+    top: -20px;
+    left: -60px;  
     width: 190px;
     height: auto;
     position: absolute;
  }
 
+ @media (min-width: 768px) {
+  .card-image  {
+    top: -30px;
+    left: -90px;  
+    width: 290px;
+    height: auto;
+    position: absolute;
+  }
+}
+
  .card-image-2 {
     bottom: -60px;
-    right: -60px;
+    right: -80px;
     width: 190px;
     height: auto;
     position: absolute;
+}
+
+@media (min-width: 768px) {
+  .card-image-2 {
+    bottom: -100px;
+    right: -90px;
+    width: 290px;
+    height: auto;
+    position: absolute;
+  }
 }
 
 .heading {
@@ -182,7 +217,7 @@ margin: 0px 12px;
 @media (min-width: 768px) {
   .heading {
     text-align: left;
-    margin: 50px;
+    margin: 40px;
   }
 }
 
@@ -314,16 +349,26 @@ background-image: url(/project-assets/testimonial-section/orbit.png);
 background-position: cover;
 background-color: #292E47;
 text-align: center;
-padding: 35px;
+padding: 100px;
+display: flex;
+flex-direction: column;
+align-items: center;
+align-content: center;
 }
+
 
 @media (min-width: 768px) {
   #clients-section {
   margin-right: 30px;
   margin-left: 30px;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 120px;
+
   }
+}
+
+.clients-container {
+  position: relative;
 }
 
 
@@ -342,27 +387,21 @@ padding: 35px;
   -webkit-text-stroke: 0.5px black;
   font-size: 17px;
   font-weight: 400;
+  margin-top: 60px;
+  margin-bottom: 3px;
+
 }
 
 #clients-section a {
   color: white;
   font-size: 13px;
   font-weight: 400;
+
+
 }
 
 /* Primer ajustar la imatge perquè sigui quadrada 
 per després poder fer el marc rodó*/
-
-.client-img  {
-  display: inline-block;
-  position: relative;
-  left: -50px;  
-  bottom: -50px;
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  border-radius: 50%;
-}
 
 .client-img  img {
   width: auto;
@@ -371,11 +410,63 @@ per després poder fer el marc rodó*/
 
 }
 
-.emoji {
-  padding: 0px 190px;
+.client-img  {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+
+@media (max-width: 768px) {
+.client-img  {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+
+}
+}
+
+
+
+
+.emoji1 {
+  position: absolute;
   width: 100px;
   height: 100px;
+  top: -50px;
+  left: -230px;
+
 }
+
+
+.emoji2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  right: -230px;
+}
+
+.emoji3 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: -50px;
+  left: -230px;
+}
+
+.emoji4 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: -50px;
+  right: -230px;
+}
+
 
 @media (max-width: 768px) {
 .emoji {
@@ -389,7 +480,6 @@ per després poder fer el marc rodó*/
 
 /*SERVICES SECTION*/
 
-/* Pendent acabar d'ajustar les imatges*/
 
 .services-items{
   display: flex;
@@ -411,19 +501,20 @@ per després poder fer el marc rodó*/
   }
 }
 
-
 #services-section article {
   margin-bottom: 120px;
   margin-top: 30px;
-  margin-left: 20px;
+  margin-left: 30px;
   text-align: left;
   background-color: white;
   padding: 20px;
   box-shadow: 2px 49px 79px 0px rgba(41,46,71,0.20);
   height: 300px;
   width: 300px;
-
+  justify-content: space-around;
 }
+
+
 
 #services-section h3 {
   text-align: center;
@@ -456,16 +547,21 @@ margin: 60px;
 
 
 
-
-
-
 #services-section img {
   width: 30px;
   height: 30px;
-  padding: 5%;
+  padding: 10%;
   background-color: #ECF7FF;
-/*posar el border radius i color a un div*/
 }
+.icon-div {
+  width: 40px;
+  height: 40px;
+  padding: 5%;
+  border-radius: 50%;
+  background-color: #F2F4FC;
+  object-fit: scale-down;
+
+  }
 
 
 /* QUESTIONS SECTION */
@@ -695,6 +791,9 @@ text-align: left;
   margin-bottom: 30px;
 
 }
+
+
+
 @media (min-width: 768px) {
 #input-half{
   display: flex;
@@ -715,16 +814,18 @@ text-align: left;
   padding-left: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 95%;
+  margin-right: 10px;
+  width: 100%;
 }
 }
 @media (min-width: 768px) {
 #phone-form{
   box-sizing: border-box;
   padding-left: 20px;
+  margin-left: 10px;
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 95%;
+  width: 98%;
 }
 }
 

@@ -25,23 +25,23 @@
 
 <section id="contact-us-section">
   <h1>Contact Us</h1>
-  <form id="container-form">
+  <form id="container-form" method="POST">
     <div>
       <label> Full Name * </label>
        <input class="input" id="name-form" placeholder="Enter your full name" required>
      </div>
      <div id="input-half">
       <div>
-        <label> Email </label>
+        <label> Email * </label>
         <input class="input" type="email" id="email-form" placeholder="Enter your email address" required>
       </div>
       <div>
-        <label> Phone </label>
-        <input class="input" type="tel" id="phone-form" placeholder="Enter your phone number" pattern="(\+)[0-9]{11}" title="El teléfono tiene que empezar por +XX" required>
+        <label> Phone *</label>
+        <input class="input" type="tel" id="phone-form" placeholder="Enter your phone number" pattern="(\+)[0-9]{11}" title="Your number should stard with a + sign followed by the country code (E.g. +XX620777777)" required>
       </div>
     </div>
      <div>
-      <label> Message </label>
+      <label> Message * </label>
        <textarea class="input" id="message-form" placeholder="Write your message here..." maxlength="50" required></textarea>
      </div>
     <div>
@@ -68,6 +68,9 @@
       <a href="#">Privacy Policy</a>
     </div>
   </div>
-</footer>
-  
+      </footer>
+
+
+    <script src="js/index.js"></script>
   </body> 
+</html>
